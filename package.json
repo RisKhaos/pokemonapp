@@ -6,11 +6,12 @@
   "homepage": "https://riskhaos.github.io/pokemonapp/",
   "scripts": {
     "dev": "vite --host",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
